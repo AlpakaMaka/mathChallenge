@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let subtrahend = getRandomInt(1, 9); // single digit
             // Ensure result is not negative or zero for simpler questions
             while (minuend <= subtrahend) { // Keep generating until minuend > subtrahend
-                 minuend = getRandomInt(20, 29);
+                 minuend = getRandomInt(20, 19);
                  subtrahend = getRandomInt(1, 9);
             }
             question = {
