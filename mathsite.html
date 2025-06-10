@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rechen-Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-content">
+            <p>Berechne so schnell wie möglich</p>
+            <button id="start-button">Start</button>
+        </div>
+    </div>
+
+    <div id="game-container" class="game-container hidden">
+        <div class="header">
+            <span id="instruction-text">Berechne so schnell wie möglich</span>
+            <div id="timer" class="timer">03:00</div>
+        </div>
+
+        <div class="question-area">
+            <p id="math-question">Lade Frage...</p>
+            <input type="number" id="answer-input" inputmode="numeric" pattern="[0-9]*" autofocus>
+            <button id="submit-button">Antworten</button>
+            <p id="feedback-text"></p>
+        </div>
+    </div>
+
+    <div id="stats-area" class="stats-area hidden">
+        <h2>Ergebnisse</h2>
+        <p>Korrekte Antworten: <span id="correct-count">0</span></p>
+        <p>Falsche Antworten: <span id="wrong-count">0</span></p>
+        <img id="feedback-image" src="" alt="Ergebnisbild" class="feedback-image">
+        <button id="restart-button">Neustart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
