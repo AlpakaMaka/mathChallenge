@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 type: 'subtraction'
             };
         } else { // addition
-            const addend1 = getRandomInt(10, 29); // 10-29
+            const addend1 = getRandomInt(10, 19); // 10-29
             const addend2 = getRandomInt(1, 9); // single digit
             question = {
                 text: `${addend1} + ${addend2} = ?`,
